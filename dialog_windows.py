@@ -43,7 +43,8 @@ class DialogWindow(tkinter.Toplevel):
         self.title(title)
             
     def onaddempl(self):
-        field_list = ['Full name', 'Date of Employee (DD.MM.YYYY)', 'Date of birsday (DD.MM.YYYY)', 'Position', 'Salary', 'Commission percent', 'Time off', 'Informal Vacation', 'Vacation']
+        field_list = ['Full name', 'Date of Employee (YYYY-MM-DD)', 'Date of birsday (YYYY-MM-DD', 'Position', 'Salary',
+                      'Commission percent', 'Time off', 'Informal Vacation', 'Vacation']
         button_list = [('Ok', lambda: self.onaddok(field_list), 'left'), ('Cancel', self.destroy, 'right')]
         title = 'Add employee'
         self.form_template(title, field_list, button_list)        
@@ -86,15 +87,20 @@ class DialogWindow(tkinter.Toplevel):
         else:
             row = ids[0][1] - 1
             if self.param['operation'] == 'add':
-                val_avail = float(rows_var[row][self.param['colnum']].get()) + float(self.ent_dict[self.param['fields'][0]].get()) # first operand is current value, second typed in input form
+                val_avail = float(rows_var[row][self.param['colnum']].get()) + \
+                            float(self.ent_dict[self.param['fields'][0]].get()) # first operand is current value, second typed in input form
 #                print(val_avail)
             elif self.param['operation'] == 'remove':
-                val_avail = float(rows_var[row][self.param['colnum']].get()) - float(self.ent_dict[self.param['fields'][0]].get()) # first operand is current value, second typed in input form
+                val_avail = float(rows_var[row][self.param['colnum']].get()) - \
+                            float(self.ent_dict[self.param['fields'][0]].get()) # first operand is current value, second typed in input form
+            else:
+                val_avail = self.ent_dict[self.param['fields'][0]].get()
             format_string = ','.join(['%s'] * (len(self.param['fields'])+2))    # +2 explanation: 1 - for employee id, 1 for PK
             change_sql = "INSERT INTO " + self.param['table_name'] + " VALUES (%s)" % format_string
             field_list = self.param['fields']
-# TBD Проверить, чтобы дата изменения была больше текущей даты
-            change_param = [ids[0][0]] + [self.ent_dict[field_list[i]].get() for i in range(1,len(field_list))] + [val_avail]  #create list of parameters for sql query
+# TBD Проверить, чтобы дата изменения была больше максимальной даты в таблице
+            change_param = [ids[0][0]] + [self.ent_dict[field_list[i]].get()
+                                          for i in range(1, len(field_list))] + [val_avail]  # create list of parameters for sql query
             change_param.append(None)   # for PK field
 #            print (change_param)
             res = execute_SQL(change_sql, change_param)
@@ -355,21 +361,24 @@ def onCommission():
 
 main_d = initialization(emp_desc)       # list of tuples with main infromation
 rowcount = len(main_d)                  # numbers of row without labels and toolbar
-colcount = max(len(i) for i in main_d)  # numers of column without checkbar
+colcount = max(len(i) for i in main_d)  # numbers of column without checkbar
 root = tkinter.Tk()
 referenses = {}
 referenses['checkbar']=[]
 referenses['grids'] = []
 referenses['toolbar']=[]
 
-sync_b = tkinter.Button(root, command=lambda: onRefresh(labels, toolbar1, toolbar2), justify='center', width="25", height="20")    #refresh button
+sync_b = tkinter.Button(root, command=lambda: onRefresh(labels, toolbar1, toolbar2),
+                        justify='center', width="25", height="20")    #refresh button
 syn_img = ImageTk.PhotoImage(file='./arrow_refresh.png')
 sync_b.config(image=syn_img)
 img_b = syn_img
 sync_b.grid(column=1, row=0)
-labels = ((2, 'Full Name', 40),(3, 'Date of Employee', 15), (4, 'Position', 15), (5, 'Timeoff', 15),(6, 'Inf_vacation (w.d.)', 15),(7, 'Vacation', 15))
-toolbar1 = {'1': (('Add Empl', 'left', lambda: DialogWindow(DialogWindow.onaddempl)), ('Del Empl', 'right', lambda: ondelemp(cb_list,rows_var))),
-            '4': (('Change', 'left',onposchange),),
+labels = ((2, 'Full Name', 40),(3, 'Date of Employee', 15), (4, 'Position', 15), (5, 'Timeoff', 15),
+          (6, 'Inf_vacation (w.d.)', 15),(7, 'Vacation', 15))
+toolbar1 = {'1': (('Add Empl', 'left', lambda: DialogWindow(DialogWindow.onaddempl)),
+                  ('Del Empl', 'right', lambda: ondelemp(cb_list,rows_var))),
+            '4': (('Change', 'left', lambda: DialogWindow(DialogWindow.onchange, operation='change', **change_pos)),),
             '5': (('Add', 'left', lambda: DialogWindow(DialogWindow.onchange, operation='add', **toff)), 
                   ('Rem', 'right', lambda: DialogWindow(DialogWindow.onchange, operation='remove', **toff))),
             '6': (('Add', 'left', lambda: DialogWindow(DialogWindow.onchange, operation='add', **inf_vac)), 
@@ -406,26 +415,36 @@ vac['colnum'] = 6
 # history position parameters
 pos = {}
 pos['table_name'] = 'position'
-pos['field_list'] = [(0, 'ID', 5), (1, 'Full Name', 40), (2, 'Current position', 15), (3, 'Previous position', 15), (4, 'Date of change', 15)]
+pos['field_list'] = [(0, 'ID', 5), (1, 'Full Name', 40), (2, 'Previous position', 15), (3, ' Date of change', 15),
+                     (4, 'New position', 15)]
 
 # history time off parameters
 toff_hist = {}
 toff_hist['table_name'] = 'timeoff'
-toff_hist['field_list'] = [(0, 'ID', 5), (1, 'Full Name', 40), (2, 'Date of change', 15), (3, 'Status', 15), (4, 'Description', 40), (5, 'Available', 15)]
+toff_hist['field_list'] = [(0, 'ID', 5), (1, 'Full Name', 40), (2, 'Date of change', 15), (3, 'Status', 15),
+                           (4, 'Description', 40), (5, 'Available', 15)]
 
 # history informal vacation parameters
 inf_vac_hist = {}
 inf_vac_hist['table_name'] = 'informal_vacation'
-inf_vac_hist['field_list'] = [(0, 'ID', 5), (1, 'Full Name', 40), (2, 'Date of change', 15), (3, 'Description', 15), (4, 'Available', 15)]
+inf_vac_hist['field_list'] = [(0, 'ID', 5), (1, 'Full Name', 40), (2, 'Date of change', 15), (3, 'Description', 15),
+                              (4, 'Available', 15)]
 
 # history vacation parameters
 vac_hist = {}
 vac_hist['table_name'] = 'vacation'
-vac_hist['field_list'] = [(0, 'ID', 5), (1, 'Full Name', 40), (2, 'Date of change', 15), (3, 'Status', 15), (4, 'Description', 15), (5, 'Available', 15)]
+vac_hist['field_list'] = [(0, 'ID', 5), (1, 'Full Name', 40), (2, 'Date of change', 15), (3, 'Status', 15),
+                          (4, 'Description', 15), (5, 'Available', 15)]
+
+# change position parameters
+change_pos = {}
+change_pos['table_name'] = 'position'
+change_pos['title'] = 'Change position for employee'
+change_pos['fields'] = ['New position', 'Previous position', 'Date of change']
+change_pos['colnum'] = 3
 
 cb_list = create_checkbar(root)
 rows_var = create_gui(root, main_d, labels, rowcount, colcount, cb_exist=True)
 create_toolbar(root, rowcount+1, OrderedDict(sorted(toolbar1.items())))
 create_toolbar(root, rowcount+2, OrderedDict(sorted(toolbar2.items())))
 root.mainloop()
-    

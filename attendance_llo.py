@@ -6,7 +6,6 @@ Created on Sun Mar 19 12:40:12 2017
 """
 
 from config import config
-
 import mysql.connector
 from mysql.connector import errorcode
 from tkinter.messagebox import askokcancel, showerror
@@ -17,7 +16,8 @@ from operator import itemgetter
 # Loading initial data and combining its to list                                                     #
 ######################################################################################################
 
-def connecting_to_db(**config):     #connecting to DB, return connection object
+def connecting_to_db(**config): # connecting to DB, return connection object
+    cnx = None
     try:
         cnx=mysql.connector.connect(**config)
     except mysql.connector.Error as err:
@@ -31,8 +31,8 @@ def connecting_to_db(**config):     #connecting to DB, return connection object
 
 def execute_SQL(sql, *param, change=True):
 #    print(param)
-    cnx=connecting_to_db(**config)
-    cursor =cnx.cursor()
+    cnx = connecting_to_db(**config)
+    cursor = cnx.cursor()
     res = None
 #    print(sql)
     if isinstance(sql, list) or isinstance(sql, tuple):
