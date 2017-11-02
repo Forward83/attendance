@@ -105,8 +105,11 @@ class DialogWindow(tkinter.Toplevel):
 #            print (change_param)
             res = execute_SQL(change_sql, change_param)
 #            print(res)
-            if res:
-                rows_var[row][self.param['colnum']].set(str(val_avail))
+            try:
+                if res:
+                    rows_var[row][self.param['colnum']].set(str(val_avail))
+            except KeyError:
+                showinfo('Operation result', 'Row added to DB successfully')
             cb_list[ids[0][1]].set(0)
             root.focus()
             self.destroy()
@@ -118,9 +121,9 @@ class History(tkinter.Toplevel):
         tkinter.Toplevel.__init__(self)
         self.param = param
         self.title('Date range')
-        self.request_dates()
+        self.request_input()
     
-    def request_dates(self):
+    def request_input(self):
         row1 = tkinter.Frame(self)
         row1.pack(expand='YES', fill='both')        
         tkinter.Label(row1, text='Start date(YYYY-MM-D):', width=20).pack(side='left', expand='YES', fill='both')
@@ -135,44 +138,131 @@ class History(tkinter.Toplevel):
         row3.pack(pady=2)
         tkinter.Button(row3, text='Retrieve', command=self.onretrieve).pack(expand='YES', fill='both')
         self.dates = (var1, var2)
+
+    def get_param_string_for_ids(self):   # return tuple of %s = number of checked ids in cb
+        ids = takeids(cb_list, rows_var)
+        if ids:
+            emp_ids = tuple(i[0] for i in ids)
+            in_emp_ids = ', '.join(['%s'] * len(emp_ids))
+            return (emp_ids, in_emp_ids)
+        else:
+            showwarning('Selection warning', 'Select at least one employee!')
+
         
+    def get_sql_statement(self):
+        col_name_sql = 'SHOW columns FROM ' + self.param['table_name'] + ';'
+        col_desc = execute_SQL(col_name_sql, change=False)
+        col_list = 't.' + col_desc[0][0] + ', e.fullName, ' + ', '.join(('t.' + i[0] for i in col_desc[1:-1]))
+        select_sql = 'SELECT ' + col_list + ' FROM employee e ' \
+                     'INNER JOIN ' + self.param['table_name'] + ' t ' \
+                     'WHERE e.idEmp = t.idEmp and t.idEmp in (%s) and (t.date_of_change BETWEEN %s and %s) ' \
+                     'ORDER BY t.idEmp, t.date_of_change;'
+        emp_ids, in_emp_ids = self.get_param_string_for_ids()
+        select_sql = select_sql % (in_emp_ids, '%s', '%s')
+        sql_parameters = []
+        sql_parameters.extend(emp_ids)
+        sql_parameters.append(self.dates[0].get())
+        sql_parameters.append(self.dates[1].get())
+        return select_sql, sql_parameters
+
+
     def onretrieve(self):
         self.table = tkinter.Toplevel()
         title = '%s change history' % self.param['table_name']
         self.table.title(title)
 #        button_list = [('close', self.table.destroy, 'left')]
-        ids = takeids(cb_list, rows_var)
+#         ids = takeids(cb_list, rows_var)
         labels = self.param['field_list']
-        col_name_sql = 'SHOW columns FROM '+self.param['table_name']+';'
-        col_desc = execute_SQL(col_name_sql, change=False)
-        col_list = 't.'+col_desc[0][0] + ', e.fullName, ' + ', '.join(('t.'+i[0] for i in col_desc[1:-1]))   # don't display table PK 
-        print(col_list)
-        format_string = ','.join(['%s']*(len(ids)))
-        print(format_string)
-        select_sql = 'SELECT ' + col_list + ' FROM employee e '\
-                    'INNER JOIN '+ self.param['table_name'] + ' t '\
-                    'WHERE e.idEmp = t.idEmp and t.idEmp in (%s) and '\
-                    '(t.date_of_change BETWEEN %s and %s) ORDER BY t.idEmp, t.date_of_change;'
-        emp_ids = tuple(i[0] for i in ids)
-        in_emp_ids = ', '.join(['%s']*len(emp_ids))
-        select_sql = select_sql % (in_emp_ids, '%s', '%s')  # format string with count of %s = count of selected ids + start , end dates
-        sql_parameters = []
-        sql_parameters.extend(emp_ids)
-        sql_parameters.append(self.dates[0].get())
-        sql_parameters.append(self.dates[1].get())
+        # col_name_sql = 'SHOW columns FROM '+self.param['table_name']+';'
+        # col_desc = execute_SQL(col_name_sql, change=False)
+        # col_list = 't.'+col_desc[0][0] + ', e.fullName, ' + ', '.join(('t.'+i[0] for i in col_desc[1:-1]))   # don't display table PK
+        # print(col_list)
+        # format_string = ','.join(['%s']*(len(ids)))
+        # print(format_string)
+        # select_sql = 'SELECT ' + col_list + ' FROM employee e '\
+        #             'INNER JOIN '+ self.param['table_name'] + ' t '\
+        #             'WHERE e.idEmp = t.idEmp and t.idEmp in (%s) and '\
+        #             '(t.date_of_change BETWEEN %s and %s) ORDER BY t.idEmp, t.date_of_change;'
+        # emp_ids = tuple(i[0] for i in ids)
+        # in_emp_ids = ', '.join(['%s']*len(emp_ids))
+        # select_sql = select_sql % (in_emp_ids, '%s', '%s')  # format string with count of %s = count of selected ids + start , end dates
+        # sql_parameters = []
+        # sql_parameters.extend(emp_ids)
+        # sql_parameters.append(self.dates[0].get())
+        # sql_parameters.append(self.dates[1].get())
 #        print(select_sql)        
 #        print(sql_parameters)
-        if ids:
-            selection = execute_SQL(select_sql, sql_parameters, change=False)
+#         if ids:
+        select_sql, sql_parameters = self.get_sql_statement()
+        selection = execute_SQL(select_sql, sql_parameters, change=False)
+        if selection:
             rowcount = len(selection)
             colcount = max(len(i) for i in selection)
             create_gui(self.table, selection, labels, rowcount, colcount, cb_exist=False)
             btn = tkinter.Button(self.table, text='Close', command=(self.table.destroy))
             btn.grid(row=rowcount+2, column=1, columnspan=colcount)
         else:
-            showwarning('Selection warning', 'Select at least one employee!')        
+            showwarning('Selection warning', 'There is no data')
         
-        
+class SecurePart(History):
+
+    def __init__(self, change_param, **param):
+        History.__init__(self, **param)
+        self.title('Login form')
+        self.title_for_table = param['table_title']
+        self.change_param = change_param
+
+    def request_input(self):
+        row1 = tkinter.Frame(self)
+        row1.pack(expand='YES', fill='both')
+        tkinter.Label(row1, text='Username:', width=20).pack(side='left', expand='YES', fill='both')
+        var1 = tkinter.StringVar()
+        tkinter.Entry(row1, textvariable=var1, width=20).pack(side='right', expand='YES', fill='both')
+        row2 = tkinter.Frame(self)
+        row2.pack(expand='YES', fill='both')
+        tkinter.Label(row2, text='Password:', width=20).pack(side='left', expand='YES', fill='both')
+        var2 = tkinter.StringVar()
+        tkinter.Entry(row2, textvariable=var2, width=20, show="*").pack(side='right', expand='YES', fill='both')
+        row3 = tkinter.Frame(self)
+        row3.pack(pady=2)
+        tkinter.Button(row3, text='Retrieve', command=self.onretrieve).pack(expand='YES', fill='both')
+        self.credential = (var1, var2)
+
+    def get_sql_statement(self):
+        col_name_sql = 'SHOW columns FROM ' + self.param['table_name'] + ';'
+        col_desc = execute_SQL(col_name_sql, change=False)
+        # Create col list from id, full name and current value of parameter
+        col_list = 't.' + col_desc[0][0] + ', e.fullName, ' + ', '.join(('t.' + i[0] for i in col_desc[-2:-1]))
+        print(col_list)
+        select_sql = 'SELECT ' + col_list + ' FROM employee e ' \
+                     'INNER JOIN ' + self.param['table_name'] + ' as t ' \
+                     'INNER JOIN ' \
+                     '(SELECT idEmp, MAX(date_of_change) as max_date FROM ' + self.param['table_name'] + \
+                     ' GROUP BY idEmp)' + ' as temp ' \
+                     'WHERE e.idEmp = t.idEmp and t.idEmp=temp.idEmp and t.date_of_change = temp.max_date ' \
+                                          'and t.idEmp in (%s) ' \
+                     'ORDER BY t.idEmp;'
+        emp_ids, in_emp_ids = self.get_param_string_for_ids()
+        select_sql = select_sql % (in_emp_ids)
+        sql_parameters = []
+        sql_parameters.extend(emp_ids)
+        return select_sql, sql_parameters
+
+    def onretrieve(self):
+        if self.credential[0].get() == 'forward' and self.credential[1].get() == 'Transtext':
+            History.onretrieve(self)
+            self.table.title(self.title_for_table)
+            # Add change and show history features
+            btn1 = tkinter.Button(self.table, text='Change',
+                                  command=lambda: DialogWindow(DialogWindow.onchange, operation='change',
+                                                               **self.change_param))
+            btn1.grid(row=rowcount + 2, column=2)
+            btn = tkinter.Button(self.table, text='History', command=lambda: History(**self.change_param))
+            btn.grid(row=rowcount + 2, column=0)
+        else:
+            showerror('Login error', 'Username or password mismatch')
+        pass
+
 
 ######################################################################################################
 # GUI part. Main table                                                                                           #
@@ -385,7 +475,8 @@ toolbar1 = {'1': (('Add Empl', 'left', lambda: DialogWindow(DialogWindow.onaddem
                   ('Rem', 'right', lambda: DialogWindow(DialogWindow.onchange, operation='remove', **inf_vac))),
             '7': (('Add', 'left', lambda: DialogWindow(DialogWindow.onchange, operation='add', **vac)), 
                   ('Rem', 'right', lambda: DialogWindow(DialogWindow.onchange, operation='remove', **vac)))}
-toolbar2 = {'1': (('Salary', 'left', onSalary), ('Commission', 'right', onCommission)),
+toolbar2 = {'1': (('Salary', 'left', lambda: SecurePart(change_salary, **salary_info)),
+                  ('Commission', 'right', onCommission)),
             '4': (('History', 'left', lambda: History(**pos)),),
             '5': (('History', 'left', lambda: History(**toff_hist)),),
             '6': (('History', 'left', lambda: History(**inf_vac_hist)),),
@@ -442,6 +533,18 @@ change_pos['table_name'] = 'position'
 change_pos['title'] = 'Change position for employee'
 change_pos['fields'] = ['New position', 'Previous position', 'Date of change']
 change_pos['colnum'] = 3
+
+# show salary info parameters
+salary_info = {}
+salary_info['table_name'] = 'salary'
+salary_info['table_title'] = 'Current salary info'
+salary_info['field_list'] = [(0, 'ID', 5), (1, 'Full Name', 40), (2, 'Current salary', 15), ]
+
+# show salary change parameters
+change_salary = {}
+change_salary['table_name'] = 'salary'
+change_salary['title'] = 'Changing salary information'
+change_salary['fields'] = ['New salary', 'Previous salary', 'Date of change']
 
 cb_list = create_checkbar(root)
 rows_var = create_gui(root, main_d, labels, rowcount, colcount, cb_exist=True)

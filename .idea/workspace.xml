@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa9ef919-f3da-4b06-b758-87e8d6275b03" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Attendance.iml" afterPath="$PROJECT_DIR$/.idea/Attendance.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/attendance_llo.py" afterPath="$PROJECT_DIR$/attendance_llo.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dialog_windows.py" afterPath="$PROJECT_DIR$/dialog_windows.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,10 +17,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="attendance_llo.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="attendance_llo.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/attendance_llo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
+            <state relative-caret-position="464">
               <caret line="34" column="25" lean-forward="false" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
               <folding>
                 <element signature="e#91#116#0" expanded="true" />
@@ -50,27 +47,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dialog_windows.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dialog_windows.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dialog_windows.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="418" column="45" lean-forward="false" selection-start-line="418" selection-start-column="45" selection-end-line="418" selection-end-column="45" />
+            <state relative-caret-position="16">
+              <caret line="114" column="26" lean-forward="false" selection-start-line="114" selection-start-column="26" selection-end-line="114" selection-end-column="26" />
               <folding>
                 <element signature="e#91#164#0" expanded="true" />
-                <marker date="1509443159070" expanded="true" signature="2325:2392" ph="INSERT INTO employee... " />
-                <marker date="1509443159070" expanded="true" signature="2490:2585" ph="INSERT INTO position... " />
-                <marker date="1509443159070" expanded="true" signature="2612:2701" ph="INSERT INTO salary... " />
-                <marker date="1509443159070" expanded="true" signature="2728:2836" ph="INSERT INTO commission... " />
-                <marker date="1509443159070" expanded="true" signature="2863:2993" ph="INSERT INTO timeoff... " />
-                <marker date="1509443159070" expanded="true" signature="3020:3164" ph="INSERT INTO informal_vacation... " />
-                <marker date="1509443159070" expanded="true" signature="3191:3323" ph="INSERT INTO vacation... " />
-                <marker date="1509443159070" expanded="true" signature="16083:16120" ph="DELETE from " />
-                <marker date="1509443159070" expanded="true" signature="16145:16180" ph="DELETE from " />
-                <marker date="1509443159070" expanded="true" signature="16205:16244" ph="DELETE from " />
-                <marker date="1509443159070" expanded="true" signature="16269:16305" ph="DELETE from " />
-                <marker date="1509443159070" expanded="true" signature="16330:16376" ph="DELETE from " />
-                <marker date="1509443159070" expanded="true" signature="16401:16438" ph="DELETE from " />
-                <marker date="1509443159070" expanded="true" signature="16463:16500" ph="DELETE from " />
+                <marker date="1509532767794" expanded="true" signature="2325:2392" ph="INSERT INTO employee... " />
+                <marker date="1509532767794" expanded="true" signature="2490:2585" ph="INSERT INTO position... " />
+                <marker date="1509532767794" expanded="true" signature="2612:2701" ph="INSERT INTO salary... " />
+                <marker date="1509532767794" expanded="true" signature="2728:2836" ph="INSERT INTO commission... " />
+                <marker date="1509532767794" expanded="true" signature="2863:2993" ph="INSERT INTO timeoff... " />
+                <marker date="1509532767794" expanded="true" signature="3020:3164" ph="INSERT INTO informal_vacation... " />
+                <marker date="1509532767794" expanded="true" signature="3191:3323" ph="INSERT INTO vacation... " />
+                <marker date="1509532767794" expanded="true" signature="9643:9727" ph="..." />
+                <marker date="1509532767794" expanded="true" signature="20710:20747" ph="DELETE from " />
+                <marker date="1509532767794" expanded="true" signature="20772:20807" ph="DELETE from " />
+                <marker date="1509532767794" expanded="true" signature="20832:20871" ph="DELETE from " />
+                <marker date="1509532767794" expanded="true" signature="20896:20932" ph="DELETE from " />
+                <marker date="1509532767794" expanded="true" signature="20957:21003" ph="DELETE from " />
+                <marker date="1509532767794" expanded="true" signature="21028:21065" ph="DELETE from " />
+                <marker date="1509532767794" expanded="true" signature="21090:21127" ph="DELETE from " />
               </folding>
             </state>
           </provider>
@@ -146,7 +144,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -159,11 +156,12 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mycontacts" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -217,12 +215,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1419" y="-4" width="1227" height="1028" extended-state="6" />
+    <frame x="1512" y="-4" width="1869" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23390383" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22228174" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.015118791" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.107942976" sideWeight="0.50611246" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33853006" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -237,7 +235,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.49388754" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -252,6 +250,156 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/attendance_llo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="34" column="25" lean-forward="false" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+          <folding>
+            <element signature="e#91#116#0" expanded="true" />
+            <marker date="1509003958105" expanded="true" signature="3219:3490" ph="SELECT E.idE... employee" />
+            <marker date="1509003958105" expanded="true" signature="3283:3357" ph="SELECT idEmp... position" />
+            <marker date="1509003958105" expanded="true" signature="3527:3806" ph="SELECT E.idE... employee" />
+            <marker date="1509003958105" expanded="true" signature="3594:3667" ph="SELECT idEmp... timeoff" />
+            <marker date="1509003958105" expanded="true" signature="3842:4154" ph="SELECT E.idE... employee" />
+            <marker date="1509003958105" expanded="true" signature="3916:3999" ph="SELECT idEmp... informal_vacation" />
+            <marker date="1509003958105" expanded="true" signature="4187:4461" ph="SELECT E.idE... employee" />
+            <marker date="1509003958105" expanded="true" signature="4254:4328" ph="SELECT idEmp... vacation" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16400">
+          <caret line="1025" column="0" lean-forward="false" selection-start-line="1025" selection-start-column="0" selection-end-line="1025" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.5/tkinter/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31888">
+          <caret line="1993" column="0" lean-forward="false" selection-start-line="1993" selection-start-column="0" selection-end-line="1993" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dialog_windows.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1824">
+          <caret line="114" column="26" lean-forward="true" selection-start-line="114" selection-start-column="26" selection-end-line="114" selection-end-column="26" />
+          <folding>
+            <element signature="e#91#164#0" expanded="true" />
+            <marker date="1509532767794" expanded="true" signature="2325:2392" ph="INSERT INTO employee... " />
+            <marker date="1509532767794" expanded="true" signature="2490:2585" ph="INSERT INTO position... " />
+            <marker date="1509532767794" expanded="true" signature="2612:2701" ph="INSERT INTO salary... " />
+            <marker date="1509532767794" expanded="true" signature="2728:2836" ph="INSERT INTO commission... " />
+            <marker date="1509532767794" expanded="true" signature="2863:2993" ph="INSERT INTO timeoff... " />
+            <marker date="1509532767794" expanded="true" signature="3020:3164" ph="INSERT INTO informal_vacation... " />
+            <marker date="1509532767794" expanded="true" signature="3191:3323" ph="INSERT INTO vacation... " />
+            <marker date="1509532767794" expanded="true" signature="9643:9727" ph="..." />
+            <marker date="1509532767794" expanded="true" signature="20710:20747" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20772:20807" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20832:20871" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20896:20932" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20957:21003" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="21028:21065" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="21090:21127" ph="DELETE from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/attendance_llo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="34" column="25" lean-forward="false" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+          <folding>
+            <element signature="e#91#116#0" expanded="true" />
+            <marker date="1509003958105" expanded="true" signature="3219:3490" ph="SELECT E.idE... employee" />
+            <marker date="1509003958105" expanded="true" signature="3283:3357" ph="SELECT idEmp... position" />
+            <marker date="1509003958105" expanded="true" signature="3527:3806" ph="SELECT E.idE... employee" />
+            <marker date="1509003958105" expanded="true" signature="3594:3667" ph="SELECT idEmp... timeoff" />
+            <marker date="1509003958105" expanded="true" signature="3842:4154" ph="SELECT E.idE... employee" />
+            <marker date="1509003958105" expanded="true" signature="3916:3999" ph="SELECT idEmp... informal_vacation" />
+            <marker date="1509003958105" expanded="true" signature="4187:4461" ph="SELECT E.idE... employee" />
+            <marker date="1509003958105" expanded="true" signature="4254:4328" ph="SELECT idEmp... vacation" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16400">
+          <caret line="1025" column="0" lean-forward="false" selection-start-line="1025" selection-start-column="0" selection-end-line="1025" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.5/tkinter/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31888">
+          <caret line="1993" column="0" lean-forward="false" selection-start-line="1993" selection-start-column="0" selection-end-line="1993" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dialog_windows.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4064">
+          <caret line="254" column="13" lean-forward="true" selection-start-line="254" selection-start-column="13" selection-end-line="254" selection-end-column="13" />
+          <folding>
+            <element signature="e#91#164#0" expanded="true" />
+            <marker date="1509532767794" expanded="true" signature="2325:2392" ph="INSERT INTO employee... " />
+            <marker date="1509532767794" expanded="true" signature="2490:2585" ph="INSERT INTO position... " />
+            <marker date="1509532767794" expanded="true" signature="2612:2701" ph="INSERT INTO salary... " />
+            <marker date="1509532767794" expanded="true" signature="2728:2836" ph="INSERT INTO commission... " />
+            <marker date="1509532767794" expanded="true" signature="2863:2993" ph="INSERT INTO timeoff... " />
+            <marker date="1509532767794" expanded="true" signature="3020:3164" ph="INSERT INTO informal_vacation... " />
+            <marker date="1509532767794" expanded="true" signature="3191:3323" ph="INSERT INTO vacation... " />
+            <marker date="1509532767794" expanded="true" signature="9643:9727" ph="..." />
+            <marker date="1509532767794" expanded="true" signature="20710:20747" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20772:20807" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20832:20871" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20896:20932" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20957:21003" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="21028:21065" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="21090:21127" ph="DELETE from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/attendance_llo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -284,20 +432,21 @@
           <caret line="105" column="55" lean-forward="false" selection-start-line="105" selection-start-column="55" selection-end-line="105" selection-end-column="55" />
           <folding>
             <element signature="e#91#164#0" expanded="true" />
-            <marker date="1509443159070" expanded="true" signature="2325:2392" ph="INSERT INTO employee... " />
-            <marker date="1509443159070" expanded="true" signature="2490:2585" ph="INSERT INTO position... " />
-            <marker date="1509443159070" expanded="true" signature="2612:2701" ph="INSERT INTO salary... " />
-            <marker date="1509443159070" expanded="true" signature="2728:2836" ph="INSERT INTO commission... " />
-            <marker date="1509443159070" expanded="true" signature="2863:2993" ph="INSERT INTO timeoff... " />
-            <marker date="1509443159070" expanded="true" signature="3020:3164" ph="INSERT INTO informal_vacation... " />
-            <marker date="1509443159070" expanded="true" signature="3191:3323" ph="INSERT INTO vacation... " />
-            <marker date="1509443159070" expanded="true" signature="16083:16120" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16145:16180" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16205:16244" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16269:16305" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16330:16376" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16401:16438" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16463:16500" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="2325:2392" ph="INSERT INTO employee... " />
+            <marker date="1509532767794" expanded="true" signature="2490:2585" ph="INSERT INTO position... " />
+            <marker date="1509532767794" expanded="true" signature="2612:2701" ph="INSERT INTO salary... " />
+            <marker date="1509532767794" expanded="true" signature="2728:2836" ph="INSERT INTO commission... " />
+            <marker date="1509532767794" expanded="true" signature="2863:2993" ph="INSERT INTO timeoff... " />
+            <marker date="1509532767794" expanded="true" signature="3020:3164" ph="INSERT INTO informal_vacation... " />
+            <marker date="1509532767794" expanded="true" signature="3191:3323" ph="INSERT INTO vacation... " />
+            <marker date="1509532767794" expanded="true" signature="9643:9727" ph="..." />
+            <marker date="1509532767794" expanded="true" signature="20710:20747" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20772:20807" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20832:20871" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20896:20932" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20957:21003" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="21028:21065" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="21090:21127" ph="DELETE from " />
           </folding>
         </state>
       </provider>
@@ -382,20 +531,21 @@
           <caret line="105" column="55" lean-forward="true" selection-start-line="105" selection-start-column="55" selection-end-line="105" selection-end-column="55" />
           <folding>
             <element signature="e#91#164#0" expanded="true" />
-            <marker date="1509443159070" expanded="true" signature="2325:2392" ph="INSERT INTO employee... " />
-            <marker date="1509443159070" expanded="true" signature="2490:2585" ph="INSERT INTO position... " />
-            <marker date="1509443159070" expanded="true" signature="2612:2701" ph="INSERT INTO salary... " />
-            <marker date="1509443159070" expanded="true" signature="2728:2836" ph="INSERT INTO commission... " />
-            <marker date="1509443159070" expanded="true" signature="2863:2993" ph="INSERT INTO timeoff... " />
-            <marker date="1509443159070" expanded="true" signature="3020:3164" ph="INSERT INTO informal_vacation... " />
-            <marker date="1509443159070" expanded="true" signature="3191:3323" ph="INSERT INTO vacation... " />
-            <marker date="1509443159070" expanded="true" signature="16083:16120" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16145:16180" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16205:16244" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16269:16305" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16330:16376" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16401:16438" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16463:16500" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="2325:2392" ph="INSERT INTO employee... " />
+            <marker date="1509532767794" expanded="true" signature="2490:2585" ph="INSERT INTO position... " />
+            <marker date="1509532767794" expanded="true" signature="2612:2701" ph="INSERT INTO salary... " />
+            <marker date="1509532767794" expanded="true" signature="2728:2836" ph="INSERT INTO commission... " />
+            <marker date="1509532767794" expanded="true" signature="2863:2993" ph="INSERT INTO timeoff... " />
+            <marker date="1509532767794" expanded="true" signature="3020:3164" ph="INSERT INTO informal_vacation... " />
+            <marker date="1509532767794" expanded="true" signature="3191:3323" ph="INSERT INTO vacation... " />
+            <marker date="1509532767794" expanded="true" signature="9643:9727" ph="..." />
+            <marker date="1509532767794" expanded="true" signature="20710:20747" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20772:20807" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20832:20871" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20896:20932" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20957:21003" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="21028:21065" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="21090:21127" ph="DELETE from " />
           </folding>
         </state>
       </provider>
@@ -432,20 +582,21 @@
           <caret line="66" column="34" lean-forward="true" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
           <folding>
             <element signature="e#91#164#0" expanded="true" />
-            <marker date="1509443159070" expanded="true" signature="2325:2392" ph="INSERT INTO employee... " />
-            <marker date="1509443159070" expanded="true" signature="2490:2585" ph="INSERT INTO position... " />
-            <marker date="1509443159070" expanded="true" signature="2612:2701" ph="INSERT INTO salary... " />
-            <marker date="1509443159070" expanded="true" signature="2728:2836" ph="INSERT INTO commission... " />
-            <marker date="1509443159070" expanded="true" signature="2863:2993" ph="INSERT INTO timeoff... " />
-            <marker date="1509443159070" expanded="true" signature="3020:3164" ph="INSERT INTO informal_vacation... " />
-            <marker date="1509443159070" expanded="true" signature="3191:3323" ph="INSERT INTO vacation... " />
-            <marker date="1509443159070" expanded="true" signature="16083:16120" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16145:16180" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16205:16244" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16269:16305" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16330:16376" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16401:16438" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16463:16500" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="2325:2392" ph="INSERT INTO employee... " />
+            <marker date="1509532767794" expanded="true" signature="2490:2585" ph="INSERT INTO position... " />
+            <marker date="1509532767794" expanded="true" signature="2612:2701" ph="INSERT INTO salary... " />
+            <marker date="1509532767794" expanded="true" signature="2728:2836" ph="INSERT INTO commission... " />
+            <marker date="1509532767794" expanded="true" signature="2863:2993" ph="INSERT INTO timeoff... " />
+            <marker date="1509532767794" expanded="true" signature="3020:3164" ph="INSERT INTO informal_vacation... " />
+            <marker date="1509532767794" expanded="true" signature="3191:3323" ph="INSERT INTO vacation... " />
+            <marker date="1509532767794" expanded="true" signature="9643:9727" ph="..." />
+            <marker date="1509532767794" expanded="true" signature="20710:20747" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20772:20807" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20832:20871" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20896:20932" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20957:21003" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="21028:21065" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="21090:21127" ph="DELETE from " />
           </folding>
         </state>
       </provider>
@@ -482,20 +633,21 @@
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
             <element signature="e#91#164#0" expanded="true" />
-            <marker date="1509443159070" expanded="true" signature="2325:2392" ph="INSERT INTO employee... " />
-            <marker date="1509443159070" expanded="true" signature="2490:2585" ph="INSERT INTO position... " />
-            <marker date="1509443159070" expanded="true" signature="2612:2701" ph="INSERT INTO salary... " />
-            <marker date="1509443159070" expanded="true" signature="2728:2836" ph="INSERT INTO commission... " />
-            <marker date="1509443159070" expanded="true" signature="2863:2993" ph="INSERT INTO timeoff... " />
-            <marker date="1509443159070" expanded="true" signature="3020:3164" ph="INSERT INTO informal_vacation... " />
-            <marker date="1509443159070" expanded="true" signature="3191:3323" ph="INSERT INTO vacation... " />
-            <marker date="1509443159070" expanded="true" signature="16083:16120" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16145:16180" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16205:16244" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16269:16305" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16330:16376" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16401:16438" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16463:16500" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="2325:2392" ph="INSERT INTO employee... " />
+            <marker date="1509532767794" expanded="true" signature="2490:2585" ph="INSERT INTO position... " />
+            <marker date="1509532767794" expanded="true" signature="2612:2701" ph="INSERT INTO salary... " />
+            <marker date="1509532767794" expanded="true" signature="2728:2836" ph="INSERT INTO commission... " />
+            <marker date="1509532767794" expanded="true" signature="2863:2993" ph="INSERT INTO timeoff... " />
+            <marker date="1509532767794" expanded="true" signature="3020:3164" ph="INSERT INTO informal_vacation... " />
+            <marker date="1509532767794" expanded="true" signature="3191:3323" ph="INSERT INTO vacation... " />
+            <marker date="1509532767794" expanded="true" signature="9643:9727" ph="..." />
+            <marker date="1509532767794" expanded="true" signature="20710:20747" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20772:20807" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20832:20871" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20896:20932" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20957:21003" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="21028:21065" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="21090:21127" ph="DELETE from " />
           </folding>
         </state>
       </provider>
@@ -532,20 +684,21 @@
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
             <element signature="e#91#164#0" expanded="true" />
-            <marker date="1509443159070" expanded="true" signature="2325:2392" ph="INSERT INTO employee... " />
-            <marker date="1509443159070" expanded="true" signature="2490:2585" ph="INSERT INTO position... " />
-            <marker date="1509443159070" expanded="true" signature="2612:2701" ph="INSERT INTO salary... " />
-            <marker date="1509443159070" expanded="true" signature="2728:2836" ph="INSERT INTO commission... " />
-            <marker date="1509443159070" expanded="true" signature="2863:2993" ph="INSERT INTO timeoff... " />
-            <marker date="1509443159070" expanded="true" signature="3020:3164" ph="INSERT INTO informal_vacation... " />
-            <marker date="1509443159070" expanded="true" signature="3191:3323" ph="INSERT INTO vacation... " />
-            <marker date="1509443159070" expanded="true" signature="16083:16120" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16145:16180" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16205:16244" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16269:16305" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16330:16376" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16401:16438" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16463:16500" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="2325:2392" ph="INSERT INTO employee... " />
+            <marker date="1509532767794" expanded="true" signature="2490:2585" ph="INSERT INTO position... " />
+            <marker date="1509532767794" expanded="true" signature="2612:2701" ph="INSERT INTO salary... " />
+            <marker date="1509532767794" expanded="true" signature="2728:2836" ph="INSERT INTO commission... " />
+            <marker date="1509532767794" expanded="true" signature="2863:2993" ph="INSERT INTO timeoff... " />
+            <marker date="1509532767794" expanded="true" signature="3020:3164" ph="INSERT INTO informal_vacation... " />
+            <marker date="1509532767794" expanded="true" signature="3191:3323" ph="INSERT INTO vacation... " />
+            <marker date="1509532767794" expanded="true" signature="9643:9727" ph="..." />
+            <marker date="1509532767794" expanded="true" signature="20710:20747" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20772:20807" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20832:20871" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20896:20932" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20957:21003" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="21028:21065" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="21090:21127" ph="DELETE from " />
           </folding>
         </state>
       </provider>
@@ -582,20 +735,21 @@
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
             <element signature="e#91#164#0" expanded="true" />
-            <marker date="1509443159070" expanded="true" signature="2325:2392" ph="INSERT INTO employee... " />
-            <marker date="1509443159070" expanded="true" signature="2490:2585" ph="INSERT INTO position... " />
-            <marker date="1509443159070" expanded="true" signature="2612:2701" ph="INSERT INTO salary... " />
-            <marker date="1509443159070" expanded="true" signature="2728:2836" ph="INSERT INTO commission... " />
-            <marker date="1509443159070" expanded="true" signature="2863:2993" ph="INSERT INTO timeoff... " />
-            <marker date="1509443159070" expanded="true" signature="3020:3164" ph="INSERT INTO informal_vacation... " />
-            <marker date="1509443159070" expanded="true" signature="3191:3323" ph="INSERT INTO vacation... " />
-            <marker date="1509443159070" expanded="true" signature="16083:16120" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16145:16180" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16205:16244" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16269:16305" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16330:16376" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16401:16438" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16463:16500" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="2325:2392" ph="INSERT INTO employee... " />
+            <marker date="1509532767794" expanded="true" signature="2490:2585" ph="INSERT INTO position... " />
+            <marker date="1509532767794" expanded="true" signature="2612:2701" ph="INSERT INTO salary... " />
+            <marker date="1509532767794" expanded="true" signature="2728:2836" ph="INSERT INTO commission... " />
+            <marker date="1509532767794" expanded="true" signature="2863:2993" ph="INSERT INTO timeoff... " />
+            <marker date="1509532767794" expanded="true" signature="3020:3164" ph="INSERT INTO informal_vacation... " />
+            <marker date="1509532767794" expanded="true" signature="3191:3323" ph="INSERT INTO vacation... " />
+            <marker date="1509532767794" expanded="true" signature="9643:9727" ph="..." />
+            <marker date="1509532767794" expanded="true" signature="20710:20747" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20772:20807" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20832:20871" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20896:20932" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20957:21003" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="21028:21065" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="21090:21127" ph="DELETE from " />
           </folding>
         </state>
       </provider>
@@ -624,20 +778,21 @@
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
             <element signature="e#91#164#0" expanded="true" />
-            <marker date="1509443159070" expanded="true" signature="2325:2392" ph="INSERT INTO employee... " />
-            <marker date="1509443159070" expanded="true" signature="2490:2585" ph="INSERT INTO position... " />
-            <marker date="1509443159070" expanded="true" signature="2612:2701" ph="INSERT INTO salary... " />
-            <marker date="1509443159070" expanded="true" signature="2728:2836" ph="INSERT INTO commission... " />
-            <marker date="1509443159070" expanded="true" signature="2863:2993" ph="INSERT INTO timeoff... " />
-            <marker date="1509443159070" expanded="true" signature="3020:3164" ph="INSERT INTO informal_vacation... " />
-            <marker date="1509443159070" expanded="true" signature="3191:3323" ph="INSERT INTO vacation... " />
-            <marker date="1509443159070" expanded="true" signature="16083:16120" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16145:16180" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16205:16244" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16269:16305" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16330:16376" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16401:16438" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16463:16500" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="2325:2392" ph="INSERT INTO employee... " />
+            <marker date="1509532767794" expanded="true" signature="2490:2585" ph="INSERT INTO position... " />
+            <marker date="1509532767794" expanded="true" signature="2612:2701" ph="INSERT INTO salary... " />
+            <marker date="1509532767794" expanded="true" signature="2728:2836" ph="INSERT INTO commission... " />
+            <marker date="1509532767794" expanded="true" signature="2863:2993" ph="INSERT INTO timeoff... " />
+            <marker date="1509532767794" expanded="true" signature="3020:3164" ph="INSERT INTO informal_vacation... " />
+            <marker date="1509532767794" expanded="true" signature="3191:3323" ph="INSERT INTO vacation... " />
+            <marker date="1509532767794" expanded="true" signature="9643:9727" ph="..." />
+            <marker date="1509532767794" expanded="true" signature="20710:20747" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20772:20807" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20832:20871" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20896:20932" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20957:21003" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="21028:21065" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="21090:21127" ph="DELETE from " />
           </folding>
         </state>
       </provider>
@@ -674,20 +829,21 @@
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
             <element signature="e#91#164#0" expanded="true" />
-            <marker date="1509443159070" expanded="true" signature="2325:2392" ph="INSERT INTO employee... " />
-            <marker date="1509443159070" expanded="true" signature="2490:2585" ph="INSERT INTO position... " />
-            <marker date="1509443159070" expanded="true" signature="2612:2701" ph="INSERT INTO salary... " />
-            <marker date="1509443159070" expanded="true" signature="2728:2836" ph="INSERT INTO commission... " />
-            <marker date="1509443159070" expanded="true" signature="2863:2993" ph="INSERT INTO timeoff... " />
-            <marker date="1509443159070" expanded="true" signature="3020:3164" ph="INSERT INTO informal_vacation... " />
-            <marker date="1509443159070" expanded="true" signature="3191:3323" ph="INSERT INTO vacation... " />
-            <marker date="1509443159070" expanded="true" signature="16083:16120" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16145:16180" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16205:16244" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16269:16305" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16330:16376" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16401:16438" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16463:16500" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="2325:2392" ph="INSERT INTO employee... " />
+            <marker date="1509532767794" expanded="true" signature="2490:2585" ph="INSERT INTO position... " />
+            <marker date="1509532767794" expanded="true" signature="2612:2701" ph="INSERT INTO salary... " />
+            <marker date="1509532767794" expanded="true" signature="2728:2836" ph="INSERT INTO commission... " />
+            <marker date="1509532767794" expanded="true" signature="2863:2993" ph="INSERT INTO timeoff... " />
+            <marker date="1509532767794" expanded="true" signature="3020:3164" ph="INSERT INTO informal_vacation... " />
+            <marker date="1509532767794" expanded="true" signature="3191:3323" ph="INSERT INTO vacation... " />
+            <marker date="1509532767794" expanded="true" signature="9643:9727" ph="..." />
+            <marker date="1509532767794" expanded="true" signature="20710:20747" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20772:20807" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20832:20871" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20896:20932" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20957:21003" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="21028:21065" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="21090:21127" ph="DELETE from " />
           </folding>
         </state>
       </provider>
@@ -716,20 +872,21 @@
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
             <element signature="e#91#164#0" expanded="true" />
-            <marker date="1509443159070" expanded="true" signature="2325:2392" ph="INSERT INTO employee... " />
-            <marker date="1509443159070" expanded="true" signature="2490:2585" ph="INSERT INTO position... " />
-            <marker date="1509443159070" expanded="true" signature="2612:2701" ph="INSERT INTO salary... " />
-            <marker date="1509443159070" expanded="true" signature="2728:2836" ph="INSERT INTO commission... " />
-            <marker date="1509443159070" expanded="true" signature="2863:2993" ph="INSERT INTO timeoff... " />
-            <marker date="1509443159070" expanded="true" signature="3020:3164" ph="INSERT INTO informal_vacation... " />
-            <marker date="1509443159070" expanded="true" signature="3191:3323" ph="INSERT INTO vacation... " />
-            <marker date="1509443159070" expanded="true" signature="16083:16120" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16145:16180" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16205:16244" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16269:16305" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16330:16376" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16401:16438" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16463:16500" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="2325:2392" ph="INSERT INTO employee... " />
+            <marker date="1509532767794" expanded="true" signature="2490:2585" ph="INSERT INTO position... " />
+            <marker date="1509532767794" expanded="true" signature="2612:2701" ph="INSERT INTO salary... " />
+            <marker date="1509532767794" expanded="true" signature="2728:2836" ph="INSERT INTO commission... " />
+            <marker date="1509532767794" expanded="true" signature="2863:2993" ph="INSERT INTO timeoff... " />
+            <marker date="1509532767794" expanded="true" signature="3020:3164" ph="INSERT INTO informal_vacation... " />
+            <marker date="1509532767794" expanded="true" signature="3191:3323" ph="INSERT INTO vacation... " />
+            <marker date="1509532767794" expanded="true" signature="9643:9727" ph="..." />
+            <marker date="1509532767794" expanded="true" signature="20710:20747" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20772:20807" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20832:20871" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20896:20932" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20957:21003" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="21028:21065" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="21090:21127" ph="DELETE from " />
           </folding>
         </state>
       </provider>
@@ -758,26 +915,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dialog_windows.py">
+    <entry file="file://$PROJECT_DIR$/attendance_llo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="418" column="45" lean-forward="false" selection-start-line="418" selection-start-column="45" selection-end-line="418" selection-end-column="45" />
+        <state relative-caret-position="464">
+          <caret line="34" column="25" lean-forward="false" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
           <folding>
-            <element signature="e#91#164#0" expanded="true" />
-            <marker date="1509443159070" expanded="true" signature="2325:2392" ph="INSERT INTO employee... " />
-            <marker date="1509443159070" expanded="true" signature="2490:2585" ph="INSERT INTO position... " />
-            <marker date="1509443159070" expanded="true" signature="2612:2701" ph="INSERT INTO salary... " />
-            <marker date="1509443159070" expanded="true" signature="2728:2836" ph="INSERT INTO commission... " />
-            <marker date="1509443159070" expanded="true" signature="2863:2993" ph="INSERT INTO timeoff... " />
-            <marker date="1509443159070" expanded="true" signature="3020:3164" ph="INSERT INTO informal_vacation... " />
-            <marker date="1509443159070" expanded="true" signature="3191:3323" ph="INSERT INTO vacation... " />
-            <marker date="1509443159070" expanded="true" signature="16083:16120" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16145:16180" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16205:16244" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16269:16305" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16330:16376" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16401:16438" ph="DELETE from " />
-            <marker date="1509443159070" expanded="true" signature="16463:16500" ph="DELETE from " />
+            <element signature="e#91#116#0" expanded="true" />
+            <marker date="1509003958105" expanded="true" signature="3219:3490" ph="SELECT E.idE... employee" />
+            <marker date="1509003958105" expanded="true" signature="3283:3357" ph="SELECT idEmp... position" />
+            <marker date="1509003958105" expanded="true" signature="3527:3806" ph="SELECT E.idE... employee" />
+            <marker date="1509003958105" expanded="true" signature="3594:3667" ph="SELECT idEmp... timeoff" />
+            <marker date="1509003958105" expanded="true" signature="3842:4154" ph="SELECT E.idE... employee" />
+            <marker date="1509003958105" expanded="true" signature="3916:3999" ph="SELECT idEmp... informal_vacation" />
+            <marker date="1509003958105" expanded="true" signature="4187:4461" ph="SELECT E.idE... employee" />
+            <marker date="1509003958105" expanded="true" signature="4254:4328" ph="SELECT idEmp... vacation" />
           </folding>
         </state>
       </provider>
@@ -790,20 +941,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/attendance_llo.py">
+    <entry file="file://$PROJECT_DIR$/dialog_windows.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
-          <caret line="34" column="25" lean-forward="false" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+          <caret line="114" column="26" lean-forward="false" selection-start-line="114" selection-start-column="26" selection-end-line="114" selection-end-column="26" />
           <folding>
-            <element signature="e#91#116#0" expanded="true" />
-            <marker date="1509003958105" expanded="true" signature="3219:3490" ph="SELECT E.idE... employee" />
-            <marker date="1509003958105" expanded="true" signature="3283:3357" ph="SELECT idEmp... position" />
-            <marker date="1509003958105" expanded="true" signature="3527:3806" ph="SELECT E.idE... employee" />
-            <marker date="1509003958105" expanded="true" signature="3594:3667" ph="SELECT idEmp... timeoff" />
-            <marker date="1509003958105" expanded="true" signature="3842:4154" ph="SELECT E.idE... employee" />
-            <marker date="1509003958105" expanded="true" signature="3916:3999" ph="SELECT idEmp... informal_vacation" />
-            <marker date="1509003958105" expanded="true" signature="4187:4461" ph="SELECT E.idE... employee" />
-            <marker date="1509003958105" expanded="true" signature="4254:4328" ph="SELECT idEmp... vacation" />
+            <element signature="e#91#164#0" expanded="true" />
+            <marker date="1509532767794" expanded="true" signature="2325:2392" ph="INSERT INTO employee... " />
+            <marker date="1509532767794" expanded="true" signature="2490:2585" ph="INSERT INTO position... " />
+            <marker date="1509532767794" expanded="true" signature="2612:2701" ph="INSERT INTO salary... " />
+            <marker date="1509532767794" expanded="true" signature="2728:2836" ph="INSERT INTO commission... " />
+            <marker date="1509532767794" expanded="true" signature="2863:2993" ph="INSERT INTO timeoff... " />
+            <marker date="1509532767794" expanded="true" signature="3020:3164" ph="INSERT INTO informal_vacation... " />
+            <marker date="1509532767794" expanded="true" signature="3191:3323" ph="INSERT INTO vacation... " />
+            <marker date="1509532767794" expanded="true" signature="9643:9727" ph="..." />
+            <marker date="1509532767794" expanded="true" signature="20710:20747" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20772:20807" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20832:20871" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20896:20932" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="20957:21003" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="21028:21065" ph="DELETE from " />
+            <marker date="1509532767794" expanded="true" signature="21090:21127" ph="DELETE from " />
           </folding>
         </state>
       </provider>
